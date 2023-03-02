@@ -7,6 +7,8 @@
 body{
     background-size: auto;
     background-color: rgb(143, 143, 143);
+    background-image: url(./img/Group\ 141.png);
+    background-repeat: no-repeat;
 }
 
 header{
@@ -23,14 +25,6 @@ header{
     height: 38.15px;
     left: 175px;
     top: 21px;
-}
-
-.Logo-text{
-    position: absolute;
-    width: 44px;
-    height: 35px;
-    left: 224px;
-    top: 23px;
 }
 
 .menu{
@@ -106,6 +100,29 @@ header{
     left: 175px;
     top: 80px;
     background-color: white;
+}
+
+.task1{
+    width: 215px;
+    height: 35px;
+    position: relative;
+}
+
+.fa-search{
+    background: url(./img/Frame\ 105.svg) no-repeat;
+}
+
+.task1 input {
+    width: 215px;
+    height: 35px;
+    padding: 10px 45px 10px 10px;
+}
+
+.task1 i {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 0;
 }
 
 
