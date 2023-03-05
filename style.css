@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -11,9 +15,9 @@ body{
     background-repeat: no-repeat;
 }
 
+/* HEADER */
 header{
-    position: absolute;
-    width: 1440px;
+    max-width: 2000px;
     height: 80px;
     left: 0px;
     background-color: white;
@@ -36,6 +40,7 @@ header{
 }
 
 .command{
+    text-decoration: none;
     position: absolute;
     width: 97px;
     height: 15px;
@@ -47,9 +52,11 @@ header{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    color: black;
 }
 
 .contact{
+    text-decoration: none;
     position: absolute;
     width: 73px;
     height: 15px;
@@ -61,6 +68,7 @@ header{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    color: black;
 }
 
 .theme{
@@ -133,47 +141,366 @@ input:checked + .slider::before{
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-/* identical to box height */
 
     text-align: right;
 }
+/* /HEADER */
 
-
-
+/* BODY */
 .container{
-    position: absolute;
     width: 1090px;
     height: 3202px;
-    left: 175px;
-    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: white;
 }
 
-.task1{
+h1{
+    position: absolute;
+    width: 386px;
+    height: 29px;
+    left: 527px;
+    top: 116px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.hr1{
+    position: absolute;
+    width: 536px;
+    height: 0px;
+    left: 452px;
+    top: 181px;
+
+border: 1px solid #000000;
+}
+
+.task1 h2{
+    position: absolute;
+    width: 283px;
+    height: 20px;
+    left: 578px;
+    top: 217px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.task1 h3{
+    position: absolute;
+    width: 212px;
+    height: 15px;
+    left: 796px;
+    top: 283px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: right;
+    color: #039900;
+}
+
+.input-task1{
+    position: absolute;
     width: 215px;
     height: 35px;
-    position: relative;
+    left: 432px;
+    top: 273px;
+
+    filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
 }
 
 .fa-search{
+    cursor: pointer;
     background: url(./img/Frame\ 105.svg) no-repeat;
 }
 
-.task1 input {
+.input-task1 input {
     width: 215px;
     height: 35px;
     padding: 10px 45px 10px 10px;
+    border-radius: 20px;
 }
 
-.task1 i {
+.input-task1 i {
     position: absolute;
     height: 35px;
     width: 35px;
     right: 0;
 }
 
+.hr2{
+    position: absolute;
+    width: 536px;
+    height: 0px;
+    left: 452px;
+    top: 344px;
 
+    border: 1px solid #000000;
+}
 
+.task2 h2{
+    position: absolute;
+    width: 327px;
+    height: 20px;
+    left: 557px;
+    top: 380px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.task2 h3{
+    position: absolute;
+    width: 224px;
+    height: 15px;
+    left: 784px;
+    top: 446px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: right;
+    color: #039900;
+}
+
+.input-task2{
+    position: absolute;
+    width: 215px;
+    height: 35px;
+    left: 432px;
+    top: 436px;
+
+    filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+
+.fa-search{
+    cursor: pointer;
+    background: url(./img/Frame\ 105.svg) no-repeat;
+}
+
+.input-task2 input {
+    width: 215px;
+    height: 35px;
+    padding: 10px 45px 10px 10px;
+    border-radius: 20px;
+}
+
+.input-task2 i {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 0;
+}
+
+.hr3{
+    position: absolute;
+    width: 536px;
+    height: 0px;
+    left: 452px;
+    top: 507px;
+
+    border: 1px solid #000000;
+}
+
+.task3 h2{
+    position: absolute;
+    width: 195px;
+    height: 20px;
+    left: 622px;
+    top: 543px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.score{
+    list-style: none;
+    position: absolute;
+    width: 93px;
+    height: 60px;
+    left: 952px;
+    top: 599px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+}
+
+.game-icons{
+    cursor: pointer;
+    position: absolute;
+    width: 256px;
+    height: 60px;
+    left: 592px;
+    top: 599px;
+}
+
+.task3 h3{
+    position: absolute;
+    width: 120px;
+    height: 15px;
+    left: 660px;
+    top: 695px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #039900;
+}
+
+.comp-var{
+    cursor: pointer;
+    position: absolute;
+    width: 182px;
+    height: 35px;
+    left: 629px;
+    top: 746px;
+
+    background: #000000;
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+}
+
+.hr4{
+    position: absolute;
+    width: 536px;
+    height: 0px;
+    left: 452px;
+    top: 817px;
+
+    border: 1px solid #000000;
+}
+
+.task4 h2{
+    position: absolute;
+    width: 119px;
+    height: 20px;
+    left: 660px;
+    top: 853px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.number1{
+    position: absolute;
+    width: 135px;
+    height: 35px;
+    left: 405px;
+    top: 922px;
+
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7E7E7E;
+}
+
+.number2{
+    position: absolute;
+    width: 135px;
+    height: 35px;
+    left: 678px;
+    top: 922px;
+
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7E7E7E;
+}
+
+.math-op{
+    position: absolute;
+    width: 62px;
+    height: 60px;
+    left: 578px;
+    top: 909px;
+}
+
+.math-op button{
+    cursor: pointer;
+    width: 27px;
+    height: 25px;
+
+    background: #000000;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+}
+
+.is{
+    cursor: pointer;
+    position: absolute;
+    width: 27px;
+    height: 25px;
+    left: 851px;
+    top: 927px;
+
+    background: #000000;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+}
+/* /BODY */
+
+/* FOOTER */
 footer{
     position: absolute;
     width: 1440px;
