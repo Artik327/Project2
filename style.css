@@ -23,6 +23,17 @@ header{
     background-color: white;
 }
 
+input{
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7E7E7E;
+
+    border: none;
+}
+
 .Logo{
     position: absolute;
     width: 40px;
@@ -32,11 +43,18 @@ header{
 }
 
 .menu{
+    border: none;
     position: absolute;
-    width: 100px;
+    width: 110px;
     height: 15px;
     left: 349px;
     top: 32px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
 }
 
 .command{
@@ -226,10 +244,13 @@ border: 1px solid #000000;
 }
 
 .input-task1 input {
+    
     width: 215px;
     height: 35px;
     padding: 10px 45px 10px 10px;
     border-radius: 20px;
+    border: none;
+    background: #D7D7D7;
 }
 
 .input-task1 i {
@@ -300,6 +321,8 @@ border: 1px solid #000000;
     height: 35px;
     padding: 10px 45px 10px 10px;
     border-radius: 20px;
+    border: none;
+    background: #D7D7D7;
 }
 
 .input-task2 i {
@@ -578,6 +601,8 @@ border: 1px solid #000000;
     height: 35px;
     padding: 10px 45px 10px 10px;
     border-radius: 20px;
+    border: none;
+    background: #D7D7D7;
 }
 
 .input-task5 i {
@@ -855,6 +880,178 @@ border: 1px solid #000000;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+}
+
+.scientists{ 
+    position: absolute;
+    left: 432px;
+    top: 2568px;
+
+    width: 577px;
+    height: 372px;
+    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.task10 .scientists div{
+    width: 100px;
+    height: 100px;
+    background: #D9D9D9;
+    border-radius: 20px;
+}
+
+.scientists-btns button{
+    padding: 10px 20px;
+    height: 35px;
+    background: #000000;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.scientists-btns{
+    position: absolute;
+    width: 857px;
+    height: 270px;
+    left: 300px;
+    top: 2976px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.modal-window{
+    position: fixed;
+    width: 576px;
+    height: 316px;
+    background: white;
+    border-radius: 20px;
+    margin-left: 255px;
+    margin-top: 100px;
+    border-style: solid;
+}
+
+.modal-text1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+
+    width: 392px;
+    height: 60px;
+    margin: auto;
+    margin-top: 46px;
+}
+
+.text-enter-name{
+    width: 103px;
+    height: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: center;
+    margin: auto;
+    margin-top: 42px;
+}
+
+.modal-input{
+    width: 169px;
+    height: 35px;
+    background: #D7D7D7;
+    border-radius: 20px;
+
+    margin-top: 18px;
+    margin-left: 204px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #7E7E7E;
+}
+
+.save{
+    cursor: pointer;
+    background: #000000;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 105px;
+    height: 35px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+
+    position: absolute;
+    bottom: 0px;
+    right: 235px;
+    left: 236px;
+    margin-bottom: 47px;
+}
+
+#cross{
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 30px;
+    top: 30px;
+}
+
+#sword{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 41px;
+    top: 154px;
+}
+
+#puzzle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 85px;
+    top: 230px;
+}
+
+#tic{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 461px;
+    top: 230px;
+}
+
+#game{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 505px;
+    top: 154px;
 }
 /* /BODY */
 
