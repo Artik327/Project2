@@ -1064,3 +1064,69 @@ footer{
     top: 3282px;
     background-color: white;
 }
+
+.Logo2{
+    position: absolute;
+    width: 165px;
+    height: 70px;
+    left: 175px;
+    bottom: 75px;
+}
+
+footer .p1{
+    position: absolute;
+    width: 207px;
+    height: 100px;
+    left: 525px;
+    bottom: 59px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 170%;
+}
+
+footer input{
+    position: absolute;
+    width: 204px;
+    height: 35px;
+    left: 919px;
+    bottom: 88px;
+
+    background: #D7D7D7;
+    border-radius: 20px;
+}
+
+footer .p2{
+    position: absolute;
+    width: 260px;
+    height: 7px;
+    left: 919px;
+    bottom: 63px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7px;
+}
+
+footer button{
+    cursor: pointer;
+    position: absolute;
+    width: 107px;
+    height: 35px;
+    left: 1159px;
+    bottom: 88px;
+
+    background: #000000;
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
