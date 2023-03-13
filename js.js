@@ -8,10 +8,10 @@ $(document).ready(function(){
 
     $(".save").click(function(){
         var val = $(".modal-input").val();
-        $(".user").html(val);
+        $(".user").html("Вітаємо, " + val);
         $(".modal-window").hide();
     });
-    // MODAL-WINDOW1
+    // MODAL-WINDOW1/
 
     // MODAL-WINDOW2
     $(".subscribe").click(function(){
@@ -21,7 +21,7 @@ $(document).ready(function(){
     $("#cross2").click(function(){
         $(".modal-window2").hide();
     });
-    // MODAL-WINDOW2
+    // MODAL-WINDOW2/
 });
 
 // TASK1
@@ -42,4 +42,25 @@ yearBtn.addEventListener("click", function(){
         yearText.style.color = "red";
     }
 });
-// TASK1
+// TASK1/
+
+// TASK2
+let rndBtn = document.getElementById("rnd-btn");
+let rndInput = document.getElementById("rnd-input");
+let rndText = document.getElementById("rnd-text");
+
+rndBtn.addEventListener("click", function(){
+    let randomNumber = Math.floor(Math.random() * 10);
+    if(randomNumber == rndInput.value){
+        rndText.style.color = "green";
+        rndText.innerHTML = "Ви вгадали! " + randomNumber;
+    } else{
+        rndText.style.color = "red";
+        rndText.innerHTML = "Ви програли, комп’ютер загадав число " + randomNumber;
+    }
+    if(rndInput.value < 0 || rndInput.value > 10){
+        rndText.innerHTML = "Введіть число від 1 до 10!";
+        rndText.style.color = "red";
+    }
+});
+// TASK2/
