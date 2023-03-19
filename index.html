@@ -62,33 +62,33 @@
                 <h2>Камінь - ножиці - папір</h2>
                 <ul class="score">
                     <li>Рахунок:</li>
-                    <li class="comp-score">Комп’ютер - 0</li>
-                    <li class="your-score">Ви - 0</li>
+                    <li class="comp-points" id="comp-points">Комп’ютер - 0</li>
+                    <li class="player-points" id="player-points">Ви - 0</li>
                 </ul>
                 <div class="game-icons">
-                    <img src="./img/rock.png" alt="rock" class="rock">
-                    <img src="./img/scissors.png" alt="scissors" class="scissors">
-                    <img src="./img/paper.png" alt="paper" class="paper">
+                    <img src="./img/rock.png" alt="rock" class="rock" id="rock">
+                    <img src="./img/scissors.png" alt="scissors" class="scissors" id="scissors">
+                    <img src="./img/paper.png" alt="paper" class="paper" id="paper">
                 </div>
-                <h3>Ви виграли раунд!</h3>
-                <button class="comp-var">Варіант комп’ютера</button>
+                <h3 id="result">Ви виграли раунд!</h3>
+                <button class="comp-var" id="comp-var">Варіант комп’ютера</button>
             </div>
 
             <hr class="hr4">
             <div class="task4">
                 <h2>Калькулятор</h2>
                 <div class="calculator">
-                    <input type="number" class="number1" placeholder="Введіть число">
-                    <input type="number" class="number2" placeholder="Введіть число">
+                    <input type="number" class="number1" id="number1" placeholder="Введіть число">
+                    <input type="number" class="number2" id="number2" placeholder="Введіть число">
                     <div class="math-op">
-                        <button class="plus">+</button>
-                        <button class="multiplication">*</button>
-                        <button class="minus">-</button>
-                        <button class="Divide">/</button>
+                        <button class="plus" id="plus">+</button>
+                        <button class="multiply" id="multiply">*</button>
+                        <button class="substract" id="substract">-</button>
+                        <button class="division" id="division">/</button>
                     </div>
                     <button class="is">=</button>
                     <div class="result">
-                        <p>Результат</p>
+                        <p id="result-text">Результат</p>
                     </div>
                 </div>
             </div>
@@ -97,11 +97,11 @@
             <div class="task5">
                 <h2>Калькулятор часу</h2>
                 <div class="input-task5">
-                    <input type="number" placeholder="Введіть число">
-                    <i class="fa-search"></i>
+                    <input type="number" id="time-input" placeholder="Введіть число">
+                    <i class="fa-search" id="time-btn"></i>
                 </div>
                 <hr class="dash">
-                <p>3 дн. 15:45:01</p>
+                <p id="time-text">3 дн. 15:45:01</p>
             </div>
 
             <hr class="hr6">

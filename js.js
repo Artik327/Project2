@@ -59,8 +59,156 @@ rndBtn.addEventListener("click", function(){
         rndText.innerHTML = "Ви програли, комп’ютер загадав число " + randomNumber;
     }
     if(rndInput.value < 0 || rndInput.value > 10){
-        rndText.innerHTML = "Введіть число від 1 до 10!";
+        rndText.innerHTML = "Введіть число від 0 до 10!";
         rndText.style.color = "red";
     }
 });
 // TASK2/
+
+// TASK3
+const rock = document.getElementById("rock");
+const scissors = document.getElementById("scissors");
+const paper = document.getElementById("paper");
+const compVar = document.getElementById("comp-var");
+const compPoints = document.getElementById("comp-points");
+const playerPoints = document.getElementById("player-points");
+const result = document.getElementById("result");
+let player;
+
+rock.addEventListener("click", function(){
+    player = "Rock";
+    console.log(player);
+});
+scissors.addEventListener("click", function(){
+    player = "Scissors";
+    console.log(player);
+});
+paper.addEventListener("click", function(){
+    player = "Paper";
+    console.log(player);
+});
+
+function computerChoice(){
+    var computerChoices = Math.floor(Math.random() * 3);
+    if (computerChoices == 0){
+        computerChoices = "Rock";
+        console.log(computerChoices);
+    }
+    else if(computerChoices == 1){
+        computerChoices = "Paper";
+        console.log(computerChoices);
+    }
+    else if(computerChoices == 2){
+        computerChoices = "Scissors";
+        console.log(computerChoices);
+    }
+    if(player == "Rock" && computerChoices == "Paper"){
+        compPoints.ariaValueText++;
+        compPoints.innerHTML = "Комп'ютер - " + compPoints.ariaValueText;
+        result.innerText = "Ви програли раунд";
+        result.style.color = "red"
+    }
+    else if(player == "Paper" && computerChoices == "Rock"){
+        playerPoints.ariaValueText++;
+        playerPoints.innerHTML = "Ви - " + playerPoints.ariaValueText;
+        result.innerText = "Ви виграли раунд!";
+        result.style.color = "green"
+    }
+    else if(player == "Paper" && computerChoices == "Scissors"){
+        compPoints.ariaValueText++;
+        compPoints.innerHTML = "Комп'ютер - " + compPoints.ariaValueText;
+        result.innerText = "Ви програли раунд";
+        result.style.color = "red"
+    }
+    else if(player == "Scissors" && computerChoices == "Paper" ){
+        playerPoints.ariaValueText++;
+        playerPoints.innerHTML = "Ви - " + playerPoints.ariaValueText;
+        result.innerText = "Ви виграли раунд!";
+        result.style.color = "green"
+    }
+    else if(player == "Rock" && computerChoices == "Scissors"){
+        playerPoints.ariaValueText++;
+        playerPoints.innerHTML = "Ви - " + playerPoints.ariaValueText;
+        result.innerText = "Ви виграли раунд!";
+        result.style.color = "green"
+    }
+    else if(player == "Scissors" && computerChoices == "Rock"){
+        compPoints.ariaValueText++;
+        compPoints.innerHTML = "Комп'ютер - " + compPoints.ariaValueText;
+        result.innerText = "Ви програли раунд";
+        result.style.color = "red"
+    }
+    else if(player == computerChoices){
+        result.innerText = "Нічия!";
+        result.style.color = "grey"
+    }
+}
+compVar.addEventListener("click", computerChoice);
+// TASK3/
+
+// TASK4
+let number1 = document.getElementById("number1");
+let number2 = document.getElementById("number2");
+let resultNumber = document.getElementById("result-text");
+let plusBtn = document.getElementById("plus");
+let multiplyBtn = document.getElementById("multiply");
+let substractBtn = document.getElementById("substract");
+let divisionBtn = document.getElementById("division");
+let firstNumber = number1.value;
+let secondNumber = number2.value;
+
+function plus(){
+        firstNumber = +number1.value;
+        secondNumber = number2.value;
+        resultNumber.innerHTML = firstNumber + secondNumber;
+        console.log(resultNumber);
+}
+
+function multiply(){
+    firstNumber = +number1.value;
+    secondNumber = number2.value;
+    resultNumber.innerHTML = firstNumber * secondNumber;
+    console.log(resultNumber);
+}
+
+function substract(){
+    firstNumber = +number1.value;
+    secondNumber = number2.value;
+    resultNumber.innerHTML = firstNumber - secondNumber;
+    console.log(resultNumber);
+}
+
+function division(){
+    firstNumber = +number1.value;
+    secondNumber = number2.value;
+    resultNumber.innerHTML = firstNumber / secondNumber;
+    console.log(resultNumber);
+}
+
+plusBtn.addEventListener("click", plus);
+multiplyBtn.addEventListener("click", multiply);
+substractBtn.addEventListener("click", substract);
+divisionBtn.addEventListener("click", division);
+// TASK4/
+
+// TASK5
+let timeBtn = document.getElementById("time-btn");
+let timeText = document.getElementById("time-text");
+
+timeBtn.addEventListener("click", function(){
+    let minutes = +document.getElementById("time-input").value;
+
+    const day = Math.floor(minutes/(60*24));
+    minutes = minutes%(60*24);
+    let hours = Math.floor(minutes/60);
+    if (hours < 10){
+        hours = "0" + hours;
+    }
+    minutes = minutes%60
+    if (minutes < 10){
+        minutes = "0" + minutes;
+    }
+
+    timeText.innerText = `${day} дн. ${hours}:${minutes}:00`;
+});
+// TASK5/
