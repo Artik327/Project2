@@ -212,3 +212,34 @@ timeBtn.addEventListener("click", function(){
     timeText.innerText = `${day} дн. ${hours}:${minutes}:00`;
 });
 // TASK5/
+
+// TASK6
+
+// TASK6/
+
+// TASK7
+
+// TASK7/
+
+// TASK8
+let number3 = document.getElementById("number3");
+let number4 = document.getElementById("number4");
+let number5 = document.getElementById("number5");
+let maxNumber = document.getElementById("max-number");
+
+number3.addEventListener("change", function(){
+    maxNumber.innerHTML = "Найбільше число, яке ви ввели - " + Math.max(number3.value, number4.value, number5.value);
+});
+
+number4.addEventListener("change", function(){
+    maxNumber.innerHTML = "Найбільше число, яке ви ввели - " + Math.max(number3.value, number4.value, number5.value);
+});
+
+number5.addEventListener("change", function(){
+    maxNumber.innerHTML = "Найбільше число, яке ви ввели - " + Math.max(number3.value, number4.value, number5.value);
+});
+// TASK8/
+
+// TASK9
+
+// TASK9/

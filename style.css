@@ -11,7 +11,7 @@
 body{
     background-size: auto;
     background-color:#EEEEEE;
-    background-image: url(./img/Group\ 141.png);
+    background-image: url(./img/Group_141.png);
     background-repeat: no-repeat;
     background-position: 0px 80px;
 }
@@ -243,7 +243,7 @@ border: 1px solid #000000;
 
 .fa-search{
     cursor: pointer;
-    background: url(./img/Frame\ 105.svg) no-repeat;
+    background: url(./img/Frame_105.svg) no-repeat;
 }
 
 .input-task1 input {
@@ -316,7 +316,7 @@ border: 1px solid #000000;
 
 .fa-search{
     cursor: pointer;
-    background: url(./img/Frame\ 105.svg) no-repeat;
+    background: url(./img/Frame_105.svg) no-repeat;
 }
 
 .input-task2 input {
@@ -598,7 +598,7 @@ border: 1px solid #000000;
 
 .fa-search{
     cursor: pointer;
-    background: url(./img/Frame\ 105.svg) no-repeat;
+    background: url(./img/Frame_105.svg) no-repeat;
 }
 
 .input-task5 input {
@@ -816,6 +816,14 @@ border: 1px solid #000000;
 
     background: #D9D9D9;
     border-radius: 20px;
+    background-image: url(./img/my_cat.jpg);
+    background-size: 150px;
+}
+
+.photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
 }
 
 .task9 h3{
@@ -948,7 +956,7 @@ border: 1px solid #000000;
     background: white;
     border-radius: 20px;
     margin-left: 255px;
-    margin-top: 100px;
+    margin-top: 30px;
     border-style: solid;
 }
 
