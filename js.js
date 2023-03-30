@@ -241,5 +241,25 @@ number5.addEventListener("change", function(){
 // TASK8/
 
 // TASK9
+let arrow1 = document.getElementById("arrow1");
+let arrow2 = document.getElementById("arrow2");
+let imgCat = document.getElementById("cat1");
+let nameText = document.getElementById("our-names");
+let workText = document.getElementById("our-work");
 
+arrow2.addEventListener("click", function(){
+    if (imgCat.src = "./img/my-cat.jpg"){
+        imgCat.src = "./img/my-cat2.jpg";
+        nameText.innerHTML = "Гліб"
+        workText.innerHTML = "Старався"
+    }
+});
+
+arrow1.addEventListener("click", function(){
+    if (imgCat.src = "./img/my-cat2.jpg"){
+        imgCat.src = "./img/my_cat.jpg";
+        nameText.innerHTML = "Гула Артур"
+        workText.innerHTML = "Весь сайт"
+    }
+});
 // TASK9/

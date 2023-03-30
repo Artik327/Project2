@@ -838,13 +838,14 @@ border: 1px solid #000000;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    text-align: center;
 }
 
 .task9 p{
     position: absolute;
     width: 320px;
     height: 15px;
-    left: 562px;
+    left: 560px;
     top: 2398px;
 
     font-family: 'Montserrat Alternates';
@@ -852,6 +853,7 @@ border: 1px solid #000000;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    text-align: center;
 }
 
 .arrow1{
@@ -1214,3 +1216,4 @@ footer button{
     color: #FFFFFF;
 }
 /* /FOOTER */
+
