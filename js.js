@@ -159,28 +159,28 @@ let secondNumber = number2.value;
 
 function plus(){
         firstNumber = +number1.value;
-        secondNumber = number2.value;
+        secondNumber = +number2.value;
         resultNumber.innerHTML = firstNumber + secondNumber;
         console.log(resultNumber);
 }
 
 function multiply(){
     firstNumber = +number1.value;
-    secondNumber = number2.value;
+    secondNumber = +number2.value;
     resultNumber.innerHTML = firstNumber * secondNumber;
     console.log(resultNumber);
 }
 
 function substract(){
     firstNumber = +number1.value;
-    secondNumber = number2.value;
+    secondNumber = +number2.value;
     resultNumber.innerHTML = firstNumber - secondNumber;
     console.log(resultNumber);
 }
 
 function division(){
     firstNumber = +number1.value;
-    secondNumber = number2.value;
+    secondNumber = +number2.value;
     resultNumber.innerHTML = firstNumber / secondNumber;
     console.log(resultNumber);
 }
@@ -214,11 +214,70 @@ timeBtn.addEventListener("click", function(){
 // TASK5/
 
 // TASK6
+const dino = document.getElementById("dino");
+const cactus = document.getElementById("cactus");
+const area = document.getElementById("dino-game")
 
+area.addEventListener("click", function(){
+    cactus.style.animation = "cactusMove 2s infinite linear";
+});
+
+document.addEventListener("wheel", function(){
+    cactus.style.animation = "none";
+});
+
+function jump(){
+    if (dino.classList != "jump"){
+        dino.classList.add("jump");
+    }
+    setTimeout(function(){
+        dino.classList.remove("jump");
+    }, 1000);
+}
+
+area.addEventListener("click", function(){
+    jump();
+});
+
+let isAlive = setInterval(function(){
+    let dinoT = parseInt(window.getComputedStyle(dino).getPropertyValue("top"));
+    let cactusL = parseInt(window.getComputedStyle(cactus).getPropertyValue("left"));
+
+    if(cactusL < 50 && cactusL > 0 && dinoT >= 150){
+        alert("Game Over");}
+}, 10);
 // TASK6/
 
 // TASK7
+let canvas = document.getElementById("canvas");
+let ball = new Image();
+let context = canvas.getContext("2d");
+var mouseXinBlock = 0;
+var mouseYinBlock = 0;
 
+canvas.addEventListener("click", function(event){
+    var mouseX = event.pageX;
+    var mouseY = event.clientY;
+    var block = document.querySelector("#canvas");
+    var blockR = block.getBoundingClientRect();
+    var blockX = blockR.left;
+    var blockY = blockR.top;
+    mouseXinBlock = mouseX - blockX - 25;
+    mouseYinBlock = mouseY - blockY - 25;
+});
+
+canvas.width = 720;
+canvas.height = 220;
+ball.src = "./img/football.png";
+
+function draw(){
+    if(mouseXinBlock > 0 && mouseXinBlock < 670 && mouseYinBlock > 0 && mouseYinBlock < 175){
+        context.fillStyle = "#5ABB58";
+        context.fillRect(0, 0, 720, 220);
+        context.drawImage(ball, mouseXinBlock, mouseYinBlock);
+    }
+}
+setInterval(draw, 10);
 // TASK7/
 
 // TASK8
@@ -259,7 +318,7 @@ arrow1.addEventListener("click", function(){
     if (imgCat.src = "./img/my-cat2.jpg"){
         imgCat.src = "./img/my_cat.jpg";
         nameText.innerHTML = "Гула Артур"
-        workText.innerHTML = "Весь сайт"
+        workText.innerHTML = "Зверстав сайт"
     }
 });
 // TASK9/

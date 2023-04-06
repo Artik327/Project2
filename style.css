@@ -673,6 +673,71 @@ border: 1px solid #000000;
     top: 1260px;
 }
 
+#dino-game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #6a6a6a;
+
+    position: absolute;
+    width: 720px;
+    height: 241px;
+    left: 360px;
+    top: 1260px;
+  }
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/dino.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 200px;
+  }
+  
+  #cactus{
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/cactus.png);
+    background-size: 50px 50px;
+    position: relative;
+    background-repeat: no-repeat;
+    top: 150px;
+    left: 570px;
+    animation: cactusMove 2s infinite linear;
+  }
+
+  
+  @keyframes cactusMove {
+    0%{
+      left: 580px;
+    }
+    100%{
+      left: -20px;
+    }
+  }
+  
+  .jump{
+    animation: jump 1s linear;
+  }
+  
+  @keyframes jump {
+    0%{
+      top: 200px;
+    }
+    30%{
+      top: 135px;
+    }
+    50%{
+      top: 130px;
+    }
+    80%{
+      top: 135px;
+    }
+    100%{
+      top: 200px;
+    }
+  }
+
 .hr7{
     position: absolute;
     width: 536px;
@@ -697,7 +762,7 @@ border: 1px solid #000000;
     line-height: 20px;
 }
 
-.field{
+/* .field{
     box-sizing: border-box;
 
     position: absolute;
@@ -717,7 +782,19 @@ border: 1px solid #000000;
     height: 50px;
     left: 452px;
     top: 1714px;
-}
+} */
+
+#canvas{
+    cursor: pointer;
+    position: absolute;
+    left: 360px;
+    top: 1629px;
+    width: 720px;
+    height: 220px;
+    border: 2px solid #000000;
+    border-radius: 37px;
+    background-color: #5ABB58;
+  }
 
 .hr8{
     position: absolute;
@@ -1217,3 +1294,7 @@ footer button{
 }
 /* /FOOTER */
 
+
+
+
+  
